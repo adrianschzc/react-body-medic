@@ -1,0 +1,7 @@
+# Define un propietario para todo el repositorio
+
+* @adrianschzc
+
+# Define un propietario específico para el archivo CODEOWNERS
+
+/.github/CODEOWNERS @adrianschzc
