@@ -1,4 +1,2 @@
 ignoredBuiltDependencies:
-  - '@tailwindcss/oxide'
-
-minimumReleaseAge: 1440
+  - esbuild

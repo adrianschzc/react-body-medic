@@ -50,7 +50,6 @@ const MenBodySvgComponent = () => {
 
     if (bodyParts[bodyPartId]) {
       setSelectedBodyPart(bodyParts[bodyPartId]);
-      console.log("Parte seleccionada:", bodyParts[bodyPartId]);
       return bodyParts[bodyPartId];
     }
     return null;

@@ -1,5 +1,5 @@
-import "./menbody.css";
-import "./variables.css";
+import "../styles/menbody.css";
+import "../styles/variables.css";
 import MenBodySvgComponent from "./MenBodySvgComponent";
 import MenBackBodySvgComponent from "./MenBackBodySvgComponent";
 
