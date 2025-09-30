@@ -10,7 +10,6 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
     "react": "^18.2.0",
-    "react-body-medic": "link:../",
     "react-dom": "^18.2.0",
     "tailwindcss": "^4.1.13"
   },

@@ -1,4 +1,3 @@
-// App.tsx - Ejemplo de uso
 import HumanBody from "../../src/components/MenBody";
 
 function App() {
