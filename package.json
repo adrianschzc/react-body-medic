@@ -1,6 +1,6 @@
 {
   "name": "react-body-medic",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Adrian Sanchez",
   "type": "module",
   "main": "dist/index.cjs.js",
