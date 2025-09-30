@@ -43,6 +43,7 @@
     "rollup": "^4.52.3",
     "rollup-plugin-postcss": "^4.0.2"
   },
+  "homepage": "https://github.com/adrianschzc/react-body-medic.git#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/adrianschzc/react-body-medic.git"
