@@ -1,6 +1,6 @@
 {
   "name": "react-body-medic",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Adrian Sanchez",
   "description": "Componente React para renderizar un cuerpo humano y detectar partes seleccionadas (uso médico/educativo).",
   "type": "module",
