@@ -3,31 +3,36 @@
   "version": "1.0.2",
   "author": "Adrian Sanchez",
   "type": "module",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --out-dir dist",
-    "prepare": "pnpm run build",
-    "lint": "eslint ."
+    "rollup": "rollup -c --bundleConfigAsCjs"
   },
   "peerDependencies": {
     "react": ">=17",
     "react-dom": ">=17"
   },
   "devDependencies": {
-    "@eslint/js": "9.36.0",
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.4",
     "@swc/core": "^1.13.5",
     "@types/react": "19.1.13",
     "@types/react-dom": "19.1.9",
-    "eslint": "9.36.0",
-    "eslint-plugin-react-hooks": "5.2.0",
-    "globals": "16.4.0",
+    "rollup-plugin-dts": "^6.2.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.8.1",
     "tsup": "^8.3.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "8.44.0"
+  },
+  "dependencies": {
+    "rollup": "^4.52.3",
+    "rollup-plugin-postcss": "^4.0.2"
   }
 }
