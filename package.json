@@ -1,11 +1,21 @@
 {
   "name": "react-body-medic",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Adrian Sanchez",
+  "description": "Componente React para renderizar un cuerpo humano y detectar partes seleccionadas (uso médico/educativo).",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "keywords": [
+    "react",
+    "body",
+    "human-body",
+    "health",
+    "medical",
+    "svg",
+    "component"
+  ],
   "files": [
     "dist"
   ],
@@ -29,10 +39,12 @@
     "tslib": "^2.8.1",
     "tsup": "^8.3.0",
     "typescript": "~5.8.3",
-    "typescript-eslint": "8.44.0"
-  },
-  "dependencies": {
+    "typescript-eslint": "8.44.0",
     "rollup": "^4.52.3",
     "rollup-plugin-postcss": "^4.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrianschzc/react-body-medic.git"
   }
 }

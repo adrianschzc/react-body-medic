@@ -1,29 +1,30 @@
-import { useState } from "react";
 import type { MouseEvent } from "react";
 
-const MenBodySvgComponent = () => {
-  type BodyPartKey =
-    | "body-model-head"
-    | "body-model-eyes"
-    | "body-model-ears"
-    | "body-model-nose"
-    | "body-model-oral_cavity"
-    | "body-model-neck_or_throat"
-    | "body-model-chest"
-    | "body-model-upper_arm"
-    | "body-model-upper_abdomen"
-    | "body-model-forearm"
-    | "body-model-mid_abdomen"
-    | "body-model-lower_abdomen"
-    | "body-model-hand"
-    | "body-model-sexual_organs"
-    | "body-model-thigh"
-    | "body-model-knee"
-    | "body-model-lower_leg"
-    | "body-model-foot";
+type BodyPartKey =
+  | "body-model-head"
+  | "body-model-eyes"
+  | "body-model-ears"
+  | "body-model-nose"
+  | "body-model-oral_cavity"
+  | "body-model-neck_or_throat"
+  | "body-model-chest"
+  | "body-model-upper_arm"
+  | "body-model-upper_abdomen"
+  | "body-model-forearm"
+  | "body-model-mid_abdomen"
+  | "body-model-lower_abdomen"
+  | "body-model-hand"
+  | "body-model-sexual_organs"
+  | "body-model-thigh"
+  | "body-model-knee"
+  | "body-model-lower_leg"
+  | "body-model-foot";
 
-  const [selectedBodyPart, setSelectedBodyPart] = useState<string>("");
+interface HumanBodyProps {
+  onSelect?: (part: string) => void; // callback cuando el usuario hace click
+}
 
+const MenBodySvgComponent = ({ onSelect }: HumanBodyProps) => {
   const bodyParts: Record<BodyPartKey, string> = {
     "body-model-head": "Cabeza",
     "body-model-eyes": "Ojos",
@@ -48,11 +49,9 @@ const MenBodySvgComponent = () => {
     const target = event.target as SVGElement;
     const bodyPartId = target.id as BodyPartKey;
 
-    if (bodyParts[bodyPartId]) {
-      setSelectedBodyPart(bodyParts[bodyPartId]);
-      return bodyParts[bodyPartId];
+    if (bodyParts[bodyPartId] && onSelect) {
+      onSelect(bodyParts[bodyPartId]); // notifica al consumidor
     }
-    return null;
   };
   return (
     <svg
