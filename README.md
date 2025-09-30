@@ -1,15 +1,16 @@
 # react-body-medic
 
 ## 🚀 Instalación
-
+```bash
 npm install react-body-medic
 # o pnpm
 pnpm add react-body-medic
 # o yarn
 yarn add react-body-medic
+```
 
 ## 📦 Uso básico
-
+```tsx
 import { useState } from "react";
 import { HumanBody } from "react-body-medic";
 
@@ -23,7 +24,8 @@ export default function App() {
     </div>
   );
 }
+```
 
-## Ej. del human body
+## Ej. Imagen del human body
 
 ![Texto alternativo](./docs/Imagen_Cuerpo.png)
